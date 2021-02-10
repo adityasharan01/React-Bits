@@ -1,0 +1,17 @@
+
+//You should wrap the elements in React Fragments. The reason being, React elements are rendered via a single root node element. Wrapping it in Fragments will allow you to group the elements without adding additional nodes.
+
+return (
+  <div className="row">
+    {options.length > 0 && (
+      <>
+      <div className="col-md-3">
+        <CustomComponent />
+      </div>
+      <div className="col-md-3">
+        <SecondComponent />
+      </div>
+    </>
+  )}
+  </div>
+)

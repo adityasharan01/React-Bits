@@ -1,4 +1,4 @@
-//CleanUp function
+//CleanUp Function
 
 import React, {useState, useEffect} from 'react'
 
@@ -20,8 +20,6 @@ const UseEffect2 = () => {
              window.removeEventListener("resize", actualWidth);
         }
     });
-
-
 
     return (
         <div>

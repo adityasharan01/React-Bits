@@ -1,4 +1,20 @@
 {
+    "window.zoomLevel": 1,
+    "editor.fontSize": 20,
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "fira code, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.formatOnPaste": true,
+    "workbench.colorTheme": "Default Dark+",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.tokenColorCustomizations": null,
+    "editor.formatOnType": true,
+    "workbench.iconTheme": "vscode-icons",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "explorer.confirmDelete": false,
+    "liveServer.settings.donotShowInfoMsg": true
     
     
 }

@@ -2,13 +2,17 @@ The 3 Most Powerful JavaScript Promise Methods 🎅🎁
 When working with promises in JavaScript, we have a lot of methods that can help us. In this post, we’re going to cover my 3 favorite methods.🎉
 
 🔥 Promise.all()
-The .all() expects an array of promises and returns a single promise. It will only resolve if all the promises passed have been resolved. If any promise in an array of promises fails, then it will reject.
+The .all() expects an array of promises and returns a single promise. It will only resolve if all the promises passed have been resolved. 
+If any promise in an array of promises fails, then it will reject.
 
 🔥 Promise.allSettled()
-The .allSettled() accepts an array of promises. It returns a new promise that will resolve if all the array promises are settled, regardless of whether the promises are resolved or rejected. Upon resolving, it returns an arr of objects. Each obj has property “status” regardless of whether the promise was fulfilled or rejected, and “value” returned when the promise is resolved or rejected.
+The .allSettled() accepts an array of promises. It returns a new promise that will resolve if all the array promises are settled, 
+  regardless of whether the promises are resolved or rejected. Upon resolving, it returns an arr of objects. 
+  Each obj has property “status” regardless of whether the promise was fulfilled or rejected, and “value” returned when the promise is resolved or rejected.
 
 🔥 Promise.any()
-The .any() short-circuits and returns a value as soon as it hits the first resolved promise from the list/arr of promises. AggregateError obj represents an error where several errors are wrapped in a single error.
+The .any() short-circuits and returns a value as soon as it hits the first resolved promise from the list/arr of promises. 
+AggregateError obj represents an error where several errors are wrapped in a single error.
 
 🔊 Promises are a way to manage asynchronous programming in #javascript.
 They're perfect for when you need to execute something in the future, and they offer some benefits that will make your life easier!

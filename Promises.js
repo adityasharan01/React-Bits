@@ -69,10 +69,15 @@ This method expects an array of promises (Iterable) and returns a single promise
 It will only resolve if all the promises passed have been resolved. If any promise in an array of promises fails, then it will reject
 
 🔥 𝗣𝗿𝗼𝗺𝗶𝘀𝗲.𝗮𝗹𝗹𝗦𝗲𝘁𝘁𝗹𝗲𝗱()
-Promise.allSettled() accepts an array of promises. It returns a new promise that will resolve if all the array promises are settled, regardless of whether the promises are resolved or rejected. Upon resolving, it returns an array of objects. Each object has property “status” regardless of whether the promise was fulfilled or rejected, and “value” returned when the promise is resolved or rejected.
+Promise.allSettled() accepts an array of promises. It returns a new promise that will resolve if all the array promises are settled,
+regardless of whether the promises are resolved or rejected. Upon resolving, it returns an array of objects. 
+Each object has property “status” regardless of whether the promise was fulfilled or rejected,
+and “value” returned when the promise is resolved or rejected.
 
 🔥 𝗣𝗿𝗼𝗺𝗶𝘀𝗲.𝗿𝗮𝗰𝗲()
-This method also accepts an array of promises. Promise.race() returns a Promise that settles as soon as one of the promises in the iterable argument settles. A settled Promise is simply a promise that either has been resolved or rejected.
+This method also accepts an array of promises. Promise.race() 
+returns a Promise that settles as soon as one of the promises in the iterable argument settles.
+A settled Promise is simply a promise that either has been resolved or rejected.
 
 ⚠️Note: ES2021 will introduce a Promise.any(), So be ready!
   

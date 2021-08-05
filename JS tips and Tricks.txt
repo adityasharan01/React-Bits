@@ -9,3 +9,13 @@ const maskedNumber = lastFourDigits.padStart(creditCard.length, '*');
 
 console.log(lastFourDigits); // 4321
 console.log(maskedNumber); // ************4321
+
+**********************************************************************************************************************
+Execute an event handler only once
+By passing { once: true } as the third argument to the addEventListener method, the event handler function will be executed only once.
+document.getElementById("btn").addEventListener("click",
+  function () {
+    console.log("Button clicked!");
+  },
+  { once: true }
+);

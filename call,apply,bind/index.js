@@ -14,7 +14,7 @@ var pokemonName = function() {
 };
 
 var logPokemon = pokemonName.bind(pokemon); // creates new object and binds pokemon. 'this' of pokemon === pokemon now
-
+//Function---> Bind ---> Object
 logPokemon(); 
 
 //CALL APPLY

@@ -1,5 +1,6 @@
 
-//You should wrap the elements in React Fragments. The reason being, React elements are rendered via a single root node element. Wrapping it in Fragments will allow you to group the elements without adding additional nodes.
+//You should wrap the elements in React Fragments. The reason being, React elements are rendered via a single root node element.
+Wrapping it in Fragments will allow you to group the elements without adding additional nodes.
 
 return (
   <div className="row">

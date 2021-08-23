@@ -22,6 +22,7 @@ Forbids deleting plain names (delete x;)
 
 Forbids binding or assignment of the names eval and arguments in any form
 
-Strict mode does not alias properties of the arguments object with the formal parameters. (e.g. in function sum (a,b) { return arguments[0] + b;} This works because arguments[0] is bound to a and so on. )
+Strict mode does not alias properties of the arguments object with the formal parameters. (e.g. in function sum (a,b) { return arguments[0] + b;} 
+This works because arguments[0] is bound to a and so on. )
 
 arguments.callee is not supported

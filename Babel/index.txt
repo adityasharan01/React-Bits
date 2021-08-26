@@ -1,0 +1,13 @@
+As you might know, every ES6 code is converted to ES5 code that the browser understands using Babel.js which is configured with Webpack or other build tools.
+
+Even every JSX in React is converted to React.createElement call to be able to display the content on the screen like this:
+
+// JSX
+<div id="content">Hello, <span>User</span></div>
+
+// Converted React.createElement code
+React.createElement("div", {
+id: "content"
+}, "Hello, ", React.createElement("span", null, "User"));
+
+Blog Link :- https://levelup.gitconnected.com/create-a-clone-of-babel-repl-site-to-convert-es6-react-code-to-es5-93cdc9ad98ea

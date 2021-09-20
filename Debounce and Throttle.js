@@ -1,3 +1,5 @@
+Link : https://dev.to/unalo_baayriyo/create-a-table-using-object-oriented-javascript-309e
+
 Debounce and Throttle are two similar(but different) techniques to limit the amount of JavaScript you are executing based on DOM events for performance reasons.
 
 Debounce -

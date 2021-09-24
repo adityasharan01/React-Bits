@@ -1,4 +1,5 @@
-As you might know, every ES6 code is converted to ES5 code that the browser understands using Babel.js which is configured with Webpack or other build tools.
+As you might know, every ES6 code is converted to ES5 code that the browser understands using 
+Babel.js which is configured with Webpack or other build tools.
 
 Even every JSX in React is converted to React.createElement call to be able to display the content on the screen like this:
 

@@ -1,5 +1,6 @@
 ## Minimun Javascript Syntax required to learn React
 
+
 1. **let and const**
 
 ``

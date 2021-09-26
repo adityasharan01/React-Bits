@@ -1,4 +1,4 @@
-## Minimun Javascript Syntax required to learn React
+## Minimun Javascript concepts required to learn React
 
 
 1. **let and const**
@@ -236,6 +236,6 @@
     }
 
     const url = "https://jsonplaceholder.typicode.com/users/"
-    fetchData(url )
+    fetchData(url)
     
 ``

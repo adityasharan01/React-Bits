@@ -3,9 +3,7 @@
 
 1. **let and const**
 
-``
-
-    const name = "Tony Stark" // define a value as const if you don't want it to change
+``    const name = "Tony Stark" // define a value as const if you don't want it to change
 
     let age = 40 // define a value as let if you expect it to change
 
@@ -238,6 +236,6 @@
     }
 
     const url = "https://jsonplaceholder.typicode.com/users/"
-    fetchData(url)
+    fetchData(url )
     
 ``

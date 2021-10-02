@@ -1,4 +1,3 @@
-
 The statement "use strict";  instructs the browser to use the Strict mode, which is a reduced and safer feature set of JavaScript.
 
 List of features (non-exhaustive)

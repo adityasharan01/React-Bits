@@ -19,6 +19,15 @@ https://devchallenges.io/
 - Sunny Puri
 - mattupham github repo
 - bigfrointend dev , dev challenges io
+
+## Resources provided by companies:-
+(These are mostly books but I would highly recommend to go through this if you have time. This will strengthen your core understanding of JS which is key to crack the interviews)
+
+The Modern JavaScript Tutorial http://javascript.info/
+JavaScript Garden: http://bonsaiden.github.io/JavaScript-Garden/
+Eloquent JavaScript: http://eloquentjavascript.net/
+https://www.youtube.com/watch?v=N233T0epWTs&ab_channel=FacebookDevelopers
+A re-introduction to JavaScript | MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
 ## //////////////////////////////////////////////////////////
 Frontend Preparation (1-4) years experience
 

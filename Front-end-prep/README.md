@@ -1,5 +1,7 @@
 https://www.thatjsdude.com/interview/
 
+https://leetcode.com/discuss/interview-question/1074798/Frontend-Interview-Preparation-(1-4-years)-Level-1-and-Level-2
+
 https://leetcode.com/discuss/interview-question/1147927/Useful-Front-End-preparation-material
 
 https://www.toptal.com/javascript/interview-questions

@@ -6,7 +6,7 @@
 
 ## A way to check if the element is within the viewport.
 ## A way to make the API call only after the user stops scrolling and waits for some time (5 secs in this case), if the user scrolls before that then we should revoke the call.
-
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,3 +109,4 @@
 </body>
 </html>
 
+```

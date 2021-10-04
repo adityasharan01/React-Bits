@@ -1,0 +1,19 @@
+function multipleValueReturnFunc(){
+    const a = 'Java', b = 'Script';
+    return {
+        a, b
+    };
+}
+
+// driver code
+const {x, y} = multipleValueReturnFunc();
+function* multipleValueReturnFunc(){
+    const a = 5, b = 10;
+    yield a;
+    yield b;
+}
+
+// driver code
+const iterator = multipleValueReturnFunc();
+const x = iterator.next().value;
+const y = iterator.next().value;

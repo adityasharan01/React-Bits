@@ -19,3 +19,12 @@ document.getElementById("btn").addEventListener("click",
   },
   { once: true }
 );
+**********************************************************************************************************************
+if(fruit === 'apple' || fruit === 'orange' || fruit ===='grapes' )
+{
+ //eat your fruit 
+}
+//The pro way 
+if(['apple','orange','grapes'].includes(fruit)) {
+//do something
+}

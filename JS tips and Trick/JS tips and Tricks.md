@@ -1,7 +1,7 @@
 
-Quick way to mask numbers using slice and ES8 padStart method
+## Quick way to mask numbers using slice and ES8 padStart method
 
-const creditCard = "4111111111114321"; // 16 digit credit card number
+``` const creditCard = "4111111111114321"; // 16 digit credit card number
 const lastFourDigits = creditCard.slice(-4); // get last 4 digits
 
 // prepend * to lastFourDigits to make length equal to creditCard number length
@@ -28,3 +28,4 @@ if(fruit === 'apple' || fruit === 'orange' || fruit ===='grapes' )
 if(['apple','orange','grapes'].includes(fruit)) {
 //do something
 }
+```

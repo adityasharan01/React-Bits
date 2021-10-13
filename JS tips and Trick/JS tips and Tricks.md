@@ -28,4 +28,18 @@ if(fruit === 'apple' || fruit === 'orange' || fruit ===='grapes' )
 if(['apple','orange','grapes'].includes(fruit)) {
 //do something
 }
+**********************************************************************************************************************
+<input type="email" id="email" />
+
+const emailInput = document.getElementById('email');
+
+emailInput.addEventListener('keyup',function (event) {
+
+if(event.getModifierState('CapsLock') )
+  console.log('caps lock is onn');
+ else
+  console.log('caps lock is off');
+  
+});
+**********************************************************************************************************************
 ```

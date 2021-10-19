@@ -1,4 +1,5 @@
-mport "./styles.css";
+
+//Using the same component by passing different props !!
 import { useState } from "react";
 import Button from "./Button";
 export default function App() {

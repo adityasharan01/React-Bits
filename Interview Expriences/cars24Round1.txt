@@ -1,0 +1,30 @@
+mport "./styles.css";
+import { useState } from "react";
+import Button from "./Button";
+export default function App() {
+  const [counta, setCounta] = useState(0);
+  const [countb, setCountb] = useState(0);
+  return (
+    <div className="App">
+      <Button count={counta} setCount={setCounta} num={1} />
+      <Button count={countb} setCount={setCountb} num={5} />
+    </div>
+  );
+}
+
+
+const Button = ({ count, setCount, num }) => {
+  function increment(e) {
+    setCount(count + num);
+  }
+
+  return (
+    <div>
+      {count}
+      <button onClick={increment}> Click me </button>
+    </div>
+  );
+};
+
+export default Button;
+

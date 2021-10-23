@@ -30,6 +30,16 @@ color: #000;
 }
 ```
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+I could set the height as a fixed value, something like height: 800px with overflow-y: scroll but then making the layout responsive will become a nightmare.
+
+So, the question arises? 🤔. How can we apply the overflow-y: scroll attribute to a div with a height of 100 percent?
+
+The solution 🧪 here is to use position: relative for the main section container and position: absolute for the sidebar and content bar, with overflow-y: scroll.
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 Do you know that In JavaScript there is a very powerful and useful API that is useful in a variety of situations like:
 
 👉 Start or stop animation on scroll

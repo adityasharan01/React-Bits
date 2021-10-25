@@ -1,18 +1,18 @@
-https://www.thatjsdude.com/interview/
+1. )https://www.thatjsdude.com/interview/
 
-https://codewithsimran.substack.com/p/comprehensive-front-end-interview
+2.) https://codewithsimran.substack.com/p/comprehensive-front-end-interview
 
-https://leetcode.com/discuss/interview-question/1074798/Frontend-Interview-Preparation-(1-4-years)-Level-1-and-Level-2
+3.) https://leetcode.com/discuss/interview-question/1074798/Frontend-Interview-Preparation-(1-4-years)-Level-1-and-Level-2
 
-https://leetcode.com/discuss/interview-question/1147927/Useful-Front-End-preparation-material
+4.) https://leetcode.com/discuss/interview-question/1147927/Useful-Front-End-preparation-material
 
-https://www.toptal.com/javascript/interview-questions
+5.) https://www.toptal.com/javascript/interview-questions
 
-https://bigfrontend.dev/problem
+6.) https://bigfrontend.dev/problem
 
-https://www.w3schools.com/howto/howto_js_filter_lists.asp
+7.) https://www.w3schools.com/howto/howto_js_filter_lists.asp
 
-https://devchallenges.io/
+8.) https://devchallenges.io/
 
 ### Linkedin People to follow 
 - Milos Milovanovic

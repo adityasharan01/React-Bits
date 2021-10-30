@@ -15,7 +15,7 @@ Introduction question
 Give me your introduction and tell me why do you want to join neogcamp?
 
 You answer should be in 1-2 minutes.
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Sample Q1
 
 Create a web app which would take two inputs. It would also have 4 buttons: +, -, x /. Based on the button clicked perform the operation on the two inputs. You can do this in React or vanillaJS based on your choice. Your time starts now.
@@ -26,6 +26,67 @@ a) You have done levelZero lectures properly. b) You can form logic like this an
 
 All questions will be having one logic to implement it.
 
+export default function App() {
+  const [numA, setNumA] = useState();
+  const [numB, setNumB] = useState();
+  const [result, setResult] = useState();
+  const handleA = () => {
+    setResult(Number(numA) + Number(numB));
+  };
+  const handleB = () => {
+    setResult(Number(numA) - Number(numB));
+  };
+  const handleC = () => {
+    setResult(Number(numA) * Number(numB));
+  };
+  const handleD = () => {
+    setResult(Number(numA) / Number(numB));
+  };
+  return (
+    <div className="App">
+      <div>
+        <input
+          type="number"
+          value={numA}
+          placeholder="Type the first number"
+          onChange={(e) => {
+            setNumA(e.target.value);
+          }}
+        />
+      </div>
+      <div>
+        <input
+          type="number"
+          value={numB}
+          onChange={(e) => {
+            setNumB(e.target.value);
+          }}
+          placeholder="Type the Second number"
+        />
+      </div>
+      <p>
+        {" "}
+        <button onClick={handleA}> + </button>{" "}
+      </p>
+      <p>
+        {" "}
+        <button onClick={handleB}> - </button>{" "}
+      </p>
+      <p>
+        {" "}
+        <button onClick={handleC}> * </button>{" "}
+      </p>
+      <p>
+        {" "}
+        <button onClick={handleD}> / </button>{" "}
+      </p>
+
+      <p> Result is : {result} </p>
+    </div>
+  );
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Sample Q2
 
 Create a web app where I can input a text. Now create two buttons + and -. On clicking + increase the fontSize by 2px and vice versa.

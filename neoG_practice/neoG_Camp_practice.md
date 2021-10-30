@@ -73,21 +73,68 @@ Show me your portfolio. Okay, I like the button you have made. Can you re create
 Sample Q13
 
 Create color variables in CSS. Two colors: primary and secondary. Now make your h1 of primary color, h2 of secondary color. Make two buttons, primary and secondary using the same color. Can you also set a font from Google Font?
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Sample Q14
 
 Create two objects with name, age, and yuga as Ram, 25, Treta. Krishna, 31, Dwapar. Write a function which takes two objects and return the person with more age.
+--->
 
+let obj1={ name: "Ram", age:43}
+
+let obj2={ name: "Shyam", age:31}
+
+function compare(a,b) {
+  if(a.age > b.age){
+    return a.name;
+  }
+  return b.name;
+}
+
+console.log(compare(obj1,obj2));
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Sample Q15
 
 Create two objects with name, age, and power as Ram, 2500, Treta. Krishna, 2325, Dwapar Write a function which takes two objects and return the person with more power.
+==>
+let obj1={ name: "Ram", age:43 ,power:"Treta"}
+let obj2={ name: "Shyam", age:31,power:"Dwapar"}
 
+function compare(a,b) {
+  let p=a.power.length;
+  let q=b.power.length;
+  if(p>q){
+    return a.name;
+  }
+  return b.name;
+}
+
+console.log(compare(obj1,obj2));
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Sample Q16
 
 Create two objects with name, age, and power as Ram, 2500, Treta. Krishna, 2325, Dwapar. Say if every character in name is worth 35 power points.
 
 Write a function which takes two objects and return the person with more power based on their name and power both.
+==>
+let obj1={ name: "Ram", age:43 ,power:"Treta"}
 
+let obj2={ name: "Shyam", age:31,power:"Dwapar"}
+
+function compare(a,b) {
+  let p=a.power.length;
+  let q=b.power.length;
+  if(p>q){
+    return a.name;
+  }
+  return b.name;
+}
+
+console.log(compare(obj1,obj2));
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Sample Q17
 
 Create a CLI app which would detect fake news. This app will take news as input and then source.
@@ -96,6 +143,8 @@ If source is Facebook or whatsapp then it will output user saying, "Don't believ
 
 Note: You can now see how much you have learnt in levelZero! Nothing till here is outside what's being taught in levelZero.
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 also note
 Extension questions will get you more marks. If you finish the first question fast and get an extension question and finish that too, you'll be marked much higher and will be considered for captaincy as well.
 

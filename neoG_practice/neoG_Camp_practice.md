@@ -91,6 +91,42 @@ Sample Q2
 
 Create a web app where I can input a text. Now create two buttons + and -. On clicking + increase the fontSize by 2px and vice versa.
 
+export default function App() {
+  const [stringA, setStringA] = useState("");
+  const handleA = () => {
+    setSize(size + 1);
+  };
+  const handleB = () => {
+    setSize(size - 1);
+  };
+  const [size, setSize] = useState(20);
+  return (
+    <div className="App">
+      <div>
+        <input
+          type="text"
+          value={stringA}
+          placeholder="Type the Text"
+          onChange={(e) => {
+            setStringA(e.target.value);
+          }}
+        />
+      </div>
+      <p>
+        <button onClick={handleA}> + </button>
+      </p>
+      <p>
+        <button onClick={handleB}> - </button>
+      </p>
+
+      <p style={{ fontSize: `${size}px` }}>{stringA}</p>
+    </div>
+  );
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 Sample Q3
 
 Create a web app where I can input a text. Now, create three buttons h1, h2, h3. When I click on any of the button, the text should become h1, h2, or h3.

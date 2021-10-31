@@ -131,21 +131,167 @@ Sample Q3
 
 Create a web app where I can input a text. Now, create three buttons h1, h2, h3. When I click on any of the button, the text should become h1, h2, or h3.
 
+import { useState } from "react";
+
+export default function App() {
+  const [stringA, setStringA] = useState("");
+  const [size, setSize] = useState(20);
+  //Logic h1 h2 and h3 font size are 32px,24px,18.72,16px
+  const handleA = () => {
+    setSize(32);
+  };
+  const handleB = () => {
+    setSize(24);
+  };
+  const handleC = () => {
+    setSize(18.72);
+  };
+
+  return (
+    <div className="App">
+      <div>
+        <input
+          type="text"
+          value={stringA}
+          placeholder="Type the Text"
+          onChange={(e) => {
+            setStringA(e.target.value);
+          }}
+        />
+      </div>
+      <p>
+        <button onClick={handleA}> h1 </button>
+      </p>
+      <p>
+        <button onClick={handleB}> h2 </button>
+      </p>
+      <p>
+        <button onClick={handleC}> h3 </button>
+      </p>
+
+      <p style={{ fontSize: `${size}px` }}>{stringA}</p>
+    </div>
+  );
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Sample Q4
 
 Create a web app where I can input a text. Now, create three buttons: red, green, blue. Clicking on the button should change the text color.
 
+export default function App() {
+  const [stringA, setStringA] = useState("");
+  const [color, setColor] = useState("black");
+  //Logic h1 h2 and h3 font size are 32px,24px,18.72,16px
+  const handleA = () => {
+    setColor("red");
+  };
+  const handleB = () => {
+    setColor("green");
+  };
+  const handleC = () => {
+    setColor("blue");
+  };
+
+  return (
+    <div className="App">
+      <div>
+        <input
+          type="text"
+          value={stringA}
+          placeholder="Type the Text"
+          onChange={(e) => {
+            setStringA(e.target.value);
+          }}
+        />
+      </div>
+      <p>
+        <button onClick={handleA}> red </button>
+      </p>
+      <p>
+        <button onClick={handleB}> green </button>
+      </p>
+      <p>
+        <button onClick={handleC}> blue </button>
+      </p>
+
+      <p style={{ color: `${color}` }}>{stringA}</p>
+    </div>
+  );
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Sample Q5
 
 Create a CLI app which takes name, unit test marks, pre final marks, final marks of 5 students. And then print who has the highest marks. What if I ask you to print the average as well?
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Sample Q6
 
 Create a web app with a button loded. Show a text loading... on a web app. However, hide it if I click on the button loaded.
 
+export default function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  const visible = {
+    display: "block"
+  };
+  const notvisible = {
+    display: "none"
+  };
+  const handleChange = () => {
+    setIsLoading((prev) => !prev);
+  };
+  return (
+    <div className="App">
+      <button onClick={handleChange}> Click Me </button>
+      <p style={isLoading ? visible : notvisible}>Loading...!!</p>
+    </div>
+  );
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 Sample Q7
 
-Here's an API. Create a web app to call this API with your full name and print the response. This could be extended where we ask you to do something with the response. Like add a text, or capitalise etc.
+Here's an API. Create a web app to call this API with your full name and print the response.
+ This could be extended where we ask you to do something with the response. Like add a text, or capitalise etc.
+ 
+ export default function App() {
+  const [title, setTitle] = useState("");
+  const [isCapital, setIsCapital] = useState(false);
+  const capital = {
+    textTransform: "capitalize"
+  };
+  const notcapital = {
+    textTransform: "uppercase"
+  };
+  async function APIcall() {
+    const output = await fetch("https://reqres.in/api/users");
+    const result = await output.json();
+    setTitle(result);
+  }
+  useEffect(() => {
+    APIcall();
+  }, []);
+  const handleChange = () => {
+    setIsCapital((prev) => !prev);
+  };
+  return (
+    <div className="App">
+      {title &&
+        title.data.map((val, idx) => {
+          return (
+            <div key={idx} style={isCapital ? capital : notcapital}>
+              {val.first_name}
+            </div>
+          );
+        })}
+      <button onClick={handleChange}> Capitalize </button>
+    </div>
+  );
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Sample Q8
 

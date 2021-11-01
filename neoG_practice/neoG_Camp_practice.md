@@ -465,6 +465,27 @@ If source is Facebook or whatsapp then it will output user saying, "Don't believ
 
 Note: You can now see how much you have learnt in levelZero! Nothing till here is outside what's being taught in levelZero.
 
+const chalk = require('chalk');
+var readLineSync = require('readline-sync')
+const error = chalk.keyword('red');
+const correct = chalk.keyword('green');
+/* Welcoming the User  */
+console.log(chalk.cyan("-------------------------------"));
+console.log(chalk.redBright.bold(" HELLO GOT SOME NEWS FOR US"));
+console.log(chalk.cyan("-------------------------------"));
+
+var news = readLineSync.question("What is THE NEWS ?");
+var source =readLineSync.question("What is your source ? ");
+
+if(["facebook","whatsapp"].includes(source.toLocaleLowerCase()))
+{
+    console.log("Don't believe things on FB and Whatsapp")
+}
+else{
+  console.log("It might be true")
+}
+
+console.log("I hope you understand these days fake news are getting spread so, BEWARE");
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 also note

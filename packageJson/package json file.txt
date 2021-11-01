@@ -1,0 +1,23 @@
+Do you know the meaning of ^ and ~ symbols mentioned in the package.json file for the package version?
+
+This is really important to avoid breaking the application code as well as from the interview point of view.
+
+Whenever we install any npm package, a new entry is added in the dependencies or devDependencies section of the package.json file in the following format:
+
+"dependencies": {
+"axios": "^0.24.0"
+}
+
+The version number 0.24.0 is a combination of 3 digits separated by the dot operator. Let’s say the version is a.b.c
+
+1. First value (a in a.b.c) specifies the major version of the package - It means this version has Major code changes and it might contain breaking API changes.
+2. Second value (b in a.b.c) specifies the minor version which contains minor changes but will not contain breaking API changes.
+3. Third value (c in a.b.c) specifies the patch version which usually contains bug fixes.
+
+^ : This symbol means when we want to update all the packages mentioned in package.json, using npm update, it will update to only patch and minor released version. So if your current version is 0.24.0 and there is a minor version released so the package will be updated to 0.25.0. If there is only a patch version released then it will be updated to the latest available patch version like 0.24.1.
+
+~: This symbol means the package will be updated to only patch releases when we run the npm update command i.e only the last digit so from 0.24.0 to 0.24.1 or 0.24.2 but not 0.25.0 or 1.24.0
+
+If there is no symbol like "axios": "0.24.0" then exact same version will be installed after running the npm update command.
+
+You can also update the specific npm package by adding the package name after the npm update command like this: npm update axios.

@@ -304,13 +304,28 @@ Here's an API, it can give two errors. Either 404, or 401. If the error is 404, 
 Sample 10
 
 Open your Github repo. Make a small change. And create a PR. Explain what you understand by Git, what's PR etc.
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Sample Q11
 
 Create a password checker web app. If password is lesser than 10 characters then show an error to user otherwise show success. Someone can ask to make the submit button disabled. Some can ask to make the input field green or red depending on input.
 
+export default function App() {
+  const [email, setEmail] = useState("");
+  return (
+    <div className="App">
+      <div>
+        <input
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+        />
+        <button disabled={email.length < 10}>Submit</button>
+      </div>
+    </div>
+  );
 
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Sample Q12
 
 Show me your portfolio. Okay, I like the button you have made. Can you re create the button without looking at source code? You're free to Google though.

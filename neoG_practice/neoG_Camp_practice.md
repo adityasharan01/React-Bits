@@ -225,6 +225,68 @@ Sample Q5
 
 Create a CLI app which takes name, unit test marks, pre final marks, final marks of 5 students. And then print who has the highest marks. What if I ask you to print the average as well?
 
+/* Libraries required  */
+const chalk = require('chalk');
+var readLineSync = require('readline-sync')
+const error = chalk.keyword('red');
+const correct = chalk.keyword('green');
+/* Welcoming the User  */
+console.log(chalk.cyan("-------------------------------"));
+console.log(chalk.redBright.bold("       🤩 WELCOME! 🤩"));
+console.log(chalk.cyan("-------------------------------"));
+var username = readLineSync.question("What is your name? ");
+console.log(chalk.yellow("Hi " + username + " !"));
+console.log("Please enter you marks for the following ");
+
+/* Leaderboard Information  */
+var leaderBoard = [{ name: "Abhishek", score: 270 }, { name: "Vishal", score: 283 },{ name: "Aditya", score: 260 },{ name: "Ritika", score: 250 },{ name: "Payal", score: 240 },{ name: "Amit", score: 230 }];
+
+/* Questions array  */
+var questions = [{ question: "Q1. What is your unit test marks?"}, 
+{question: "Q2.What is your pre-final test marks?"}, 
+{question: "Q3. what is your final marks ?"}];
+/* Total Score */
+var score = 0;
+/* Function that drives the game  */
+function play(question) {
+    var q = readLineSync.question(question);
+    score = score+ Number(q);
+}
+/* Loop that calls the function everytime */
+for (var i = 0; i < questions.length; i++) {
+    var currentq = questions[i];
+    play(currentq.question);
+}
+/* Final Score Display  */
+console.log("Your final score is : " + score + "/300 👍✨");
+
+finalend = 0;
+/* Appending the name and the score to leaderboard array */
+var a = { name: username, score: score };
+for (var j = 0; j < leaderBoard.length; j++) {
+    var c = leaderBoard[j];
+    if (score >= c.score) {
+        finalend = 1;
+        leaderBoard.splice(j, 0, a);
+        break;
+    }
+}
+if (finalend === 0) {
+    leaderBoard.push(a);
+}
+console.log(chalk.yellow("------------------------------"));
+console.log(chalk.yellow("         🥳LEADERBOARD🥳           "));
+/* Displaying the Leaderboard  */
+
+// for (var k = 0; k < leaderBoard.length; k++) {
+//     console.log(leaderBoard[k].name + "     - " + leaderBoard[k].score);
+// }
+//Instead of displaying the leader board we are displaying the toper of the leader board !
+
+console.log(leaderBoard[0].name + "  has the highest score " + leaderBoard[0].score);
+console.log(chalk.yellow("------------------------------"));
+console.log("DONE WITH THE EXAMS FINALLY !!");
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Sample Q6
 

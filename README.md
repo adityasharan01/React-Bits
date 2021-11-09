@@ -7,7 +7,7 @@
 
     let age = 40 // define a value as let if you expect it to change
 
-    // Both let and const are block scoped
+    // Both let and  const are block scoped
 
 
 ``

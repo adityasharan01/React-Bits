@@ -1,7 +1,7 @@
 # Minimum Javascript concept which are required to learn React.js
 
 
-1. **let & const variable initialisation**
+1. ** let & const variable initialisation**
 
 ``    const name = "Tony Stark" // define a value as const if you don't want it to change
 

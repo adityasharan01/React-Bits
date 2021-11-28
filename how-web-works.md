@@ -1,4 +1,4 @@
-# How Web Works
+# How Web works
 
 What happens behind the scenes when we type google.com in a browser?
 

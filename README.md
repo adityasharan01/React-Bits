@@ -5,7 +5,7 @@
 
 ``    const name = "Tony Stark" // define a value as const if you don't want it to change
 
-    let age = 40 // define a value as let if you expect it to change
+    let age = 40 // define a value As let if you expect it to change
 
     // Both let and  const are block scoped
 

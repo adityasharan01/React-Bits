@@ -12,7 +12,7 @@
 
 ``
 
-2. **Template Literals**
+2. **Template literals**
 
 ``
 

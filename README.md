@@ -1,4 +1,4 @@
-# Minimum Javascript concept which are required to learn React.js
+# Minimum Javascript Concept which are required to learn React.js
 
 
 1. **let & const variable initialisation**

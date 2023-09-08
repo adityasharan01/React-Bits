@@ -16,3 +16,18 @@
     "explorer.confirmDelete": false,
     "liveServer.settings.donotShowInfoMsg": true
 }
+
+
+//alag settings
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 15,
+    "workbench.list.openMode": "doubleClick",
+    "window.zoomLevel": -1,
+    "workbench.tree.indent": 15,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#05ef3c"
+    }
+}

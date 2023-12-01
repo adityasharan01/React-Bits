@@ -38,7 +38,7 @@ Hoisting is a JavaScript behavior where variable and function declarations are m
 
 Debouncing is a programming practice used to ensure that time-consuming tasks do not fire so often, slowing down the performance. It involves delaying the execution of a function until after a certain amount of time has passed since the last time the function was invoked.
 
-``````
+```
 function debounce(func, delay) {
   let timeoutId;
   return function (...args) {
